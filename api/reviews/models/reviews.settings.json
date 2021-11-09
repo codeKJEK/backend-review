@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "reviews",
   "info": {
-    "name": "reviews"
+    "name": "reviews",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,18 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "image": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
-    },
     "name": {
       "type": "string"
     },
@@ -31,6 +20,9 @@
     },
     "review": {
       "type": "text"
+    },
+    "imageURL": {
+      "type": "string"
     }
   }
 }

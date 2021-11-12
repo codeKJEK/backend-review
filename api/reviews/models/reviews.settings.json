@@ -21,8 +21,17 @@
     "review": {
       "type": "text"
     },
-    "imageURL": {
-      "type": "text"
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }
